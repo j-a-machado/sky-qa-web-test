@@ -1,0 +1,19 @@
+1638556245424	geckodriver	INFO	Listening on 127.0.0.1:55107
+1638556245856	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofileVMplPo"
+1638556247476	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofileVMplPo/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+1638556251999	Marionette	INFO	Listening on port 55118
+1638556252155	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.sky.com.br/, line 3512: ReferenceError: HT is not defined
+JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=2106364808, line 1: unreachable code after return statement
+JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=2106364808, line 1: unreachable code after return statement
+JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=2106364808, line 1: unreachable code after return statement
+JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=2106364808 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=2106364808 line 1 > eval, line 1: unreachable code after return statement
+1638556282660	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1638556289953	Marionette	INFO	Stopped listening on port 55118
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
