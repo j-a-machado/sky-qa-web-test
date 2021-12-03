@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211203 18:00:42.934" rpa="false" schemaversion="2">
+<suite id="s1" name="Validate Schedule" source="/Users/julianaantunesmachado/GitHub/sky-qa-web-test/Test/Web/Functional/Test-Case/Validate_Schedule.robot">
+<test id="s1-t1" name="Text and time in the schedule need to be the same in the modal">
+<kw name="Open Session" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211203 18:00:43.393" level="INFO">Opening browser 'firefox' to base url 'http://www.sky.com.br/'.</msg>
+<msg timestamp="20211203 18:00:43.395" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/sky-qa-web-test/Test/Web/Functional/results/geckodriver-1.log</msg>
+<status status="PASS" starttime="20211203 18:00:43.392" endtime="20211203 18:01:00.524"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211203 18:01:02.535" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211203 18:01:00.528" endtime="20211203 18:01:02.535"/>
+</kw>
+<status status="PASS" starttime="20211203 18:00:43.391" endtime="20211203 18:01:02.536"/>
+</kw>
+<kw name="Given user is on the home Page" library="home">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211203 18:01:02.570" level="INFO">Page title is 'SKY: A gente se diverte junto! | SKY - Sky'.</msg>
+<status status="PASS" starttime="20211203 18:01:02.542" endtime="20211203 18:01:02.570"/>
+</kw>
+<status status="PASS" starttime="20211203 18:01:02.537" endtime="20211203 18:01:02.574"/>
+</kw>
+<kw name="When user close the popup" library="home">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${HOME_BUTTON_CLOSE_POPUP}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211203 18:01:02.581" endtime="20211203 18:01:02.695"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${HOME_BUTTON_CLOSE_POPUP}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211203 18:01:02.697" level="INFO">Clicking button 'xpath:(//button)[18]'.</msg>
+<status status="PASS" starttime="20211203 18:01:02.695" endtime="20211203 18:01:03.098"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${HOME_TEXT_SCHEDULE}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211203 18:01:03.144" level="INFO">Current page contains text 'Programação'.</msg>
+<status status="PASS" starttime="20211203 18:01:03.099" endtime="20211203 18:01:03.144"/>
+</kw>
+<status status="PASS" starttime="20211203 18:01:02.580" endtime="20211203 18:01:03.145"/>
+</kw>
+<kw name="And user goes to schedule" library="home">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${HOME_LINK_SCHEDULE}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211203 18:01:03.146" endtime="20211203 18:01:03.223"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${HOME_LINK_SCHEDULE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211203 18:01:03.224" endtime="20211203 18:01:03.264"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${HOME_LINK_SCHEDULE}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211203 18:01:03.265" level="INFO">Clicking link '(//a)[@href="/programacao"]'.</msg>
+<status status="PASS" starttime="20211203 18:01:03.264" endtime="20211203 18:01:14.830"/>
+</kw>
+<status status="PASS" starttime="20211203 18:01:03.145" endtime="20211203 18:01:14.830"/>
+</kw>
+<kw name="And user sees the schedule" library="programacao">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${PROGRAMACAO_TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211203 18:01:14.852" level="INFO">Page title is 'Na TV: Grade de Programação | SKY'.</msg>
+<status status="PASS" starttime="20211203 18:01:14.832" endtime="20211203 18:01:14.852"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${PROGRAMACAO_SCHEDULE_LIVE_NOW_TITLE}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211203 18:01:14.852" endtime="20211203 18:01:14.934"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PROGRAMACAO_SCHEDULE_LIVE_NOW_TITLE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211203 18:01:14.934" endtime="20211203 18:01:14.976"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${PROGRAMACAO_LIVE_NOW_TEXT}</var>
+<arg>${PROGRAMACAO_SCHEDULE_LIVE_NOW_TITLE}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211203 18:01:15.020" level="INFO">${PROGRAMACAO_LIVE_NOW_TEXT} = CERVEJANTES</msg>
+<status status="PASS" starttime="20211203 18:01:14.976" endtime="20211203 18:01:15.020"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${PROGRAMACAO_LIVE_NOW_TEXT}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20211203 18:01:15.023" level="INFO">${PROGRAMACAO_LIVE_NOW_TEXT} = CERVEJANTES</msg>
+<status status="PASS" starttime="20211203 18:01:15.021" endtime="20211203 18:01:15.023"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${PROGRAMACAO_LIVE_NOW_HOUR}</var>
+<arg>${PROGRAMACAO_SCHEDULE_LIVE_NOW_TIME}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211203 18:01:15.078" level="INFO">${PROGRAMACAO_LIVE_NOW_HOUR} = 18:30 - 19:00</msg>
+<status status="PASS" starttime="20211203 18:01:15.024" endtime="20211203 18:01:15.078"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${PROGRAMACAO_LIVE_NOW_HOUR}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20211203 18:01:15.080" level="INFO">${PROGRAMACAO_LIVE_NOW_HOUR} = 18:30 - 19:00</msg>
+<status status="PASS" starttime="20211203 18:01:15.078" endtime="20211203 18:01:15.080"/>
+</kw>
+<status status="PASS" starttime="20211203 18:01:14.831" endtime="20211203 18:01:15.080"/>
+</kw>
+<kw name="And user clicks on the schedule live" library="programacao">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PROGRAMACAO_SCHEDULE_LIVE_NOW_TITLE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211203 18:01:15.084" level="INFO">Clicking element 'xpath:(//div)[contains(@class, 'schedule-live')][1]/div/h2'.</msg>
+<status status="PASS" starttime="20211203 18:01:15.082" endtime="20211203 18:01:15.603"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${PROGRAMACAO_MODAL_TITLE}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211203 18:01:15.604" endtime="20211203 18:01:15.824"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PROGRAMACAO_MODAL_TITLE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211203 18:01:15.825" endtime="20211203 18:01:16.498"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${PROGRAMAÇÃO_MODAL_TEXT}</var>
+<arg>${PROGRAMACAO_MODAL_TITLE}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211203 18:01:16.522" level="INFO">${PROGRAMAÇÃO_MODAL_TEXT} = CERVEJANTES</msg>
+<status status="PASS" starttime="20211203 18:01:16.498" endtime="20211203 18:01:16.522"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${PROGRAMAÇÃO_MODAL_TEXT}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20211203 18:01:16.523" level="INFO">${PROGRAMAÇÃO_MODAL_TEXT} = CERVEJANTES</msg>
+<status status="PASS" starttime="20211203 18:01:16.523" endtime="20211203 18:01:16.524"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${PROGRAMACAO_MODAL_HOUR}</var>
+<arg>${PROGRAMACAO_MODAL_TIME}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211203 18:01:16.559" level="INFO">${PROGRAMACAO_MODAL_HOUR} = 18:30 - 19:00</msg>
+<status status="PASS" starttime="20211203 18:01:16.524" endtime="20211203 18:01:16.559"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${PROGRAMACAO_MODAL_HOUR}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20211203 18:01:16.561" level="INFO">${PROGRAMACAO_MODAL_HOUR} = 18:30 - 19:00</msg>
+<status status="PASS" starttime="20211203 18:01:16.559" endtime="20211203 18:01:16.561"/>
+</kw>
+<status status="PASS" starttime="20211203 18:01:15.081" endtime="20211203 18:01:16.561"/>
+</kw>
+<kw name="Then user validate that the title an time in the schedule is the same in the modal" library="programacao">
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${PROGRAMACAO_LIVE_NOW_TEXT}</arg>
+<arg>${PROGRAMAÇÃO_MODAL_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20211203 18:01:16.564" endtime="20211203 18:01:16.566"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${PROGRAMACAO_LIVE_NOW_HOUR}</arg>
+<arg>${PROGRAMACAO_MODAL_HOUR}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20211203 18:01:16.566" endtime="20211203 18:01:16.569"/>
+</kw>
+<status status="PASS" starttime="20211203 18:01:16.562" endtime="20211203 18:01:16.571"/>
+</kw>
+<kw name="Close Session" library="resource" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211203 18:01:18.579" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211203 18:01:16.577" endtime="20211203 18:01:18.579"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211203 18:01:18.797" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211203 18:01:18.579" endtime="20211203 18:01:18.798"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211203 18:01:18.799" endtime="20211203 18:01:20.112"/>
+</kw>
+<status status="PASS" starttime="20211203 18:01:16.576" endtime="20211203 18:01:20.113"/>
+</kw>
+<status status="PASS" starttime="20211203 18:00:43.390" endtime="20211203 18:01:20.113"/>
+</test>
+<status status="PASS" starttime="20211203 18:00:42.940" endtime="20211203 18:01:20.123"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Validate Schedule">Validate Schedule</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
