@@ -6,6 +6,11 @@ Test automation leveling challenge
 
 ---
 
+![](https://img.shields.io/badge/python-v.3.7-blue.svg)
+![](https://img.shields.io/badge/pypi-v.21.2-blue.svg)
+
+---
+
 ## 1. About
 The test consists of building a web test automation, based on the exposed scenario, with the following guidelines :
 * Avoid hard code;
