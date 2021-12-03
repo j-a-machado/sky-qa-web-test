@@ -1,102 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211203 14:53:59.803" rpa="false" schemaversion="2">
-<suite id="s1" name="Validate Schedule" source="/Users/julianaantunesmachado/GitHub/sky-qa-web-test/Test/Functional/Validate_Schedule.robot">
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211203 15:10:24.810" rpa="false" schemaversion="2">
+<suite id="s1" name="Validate Schedule" source="/Users/julianaantunesmachado/GitHub/sky-qa-web-test/Test/Functional/Test-Case/Validate_Schedule.robot">
 <test id="s1-t1" name="Text and time in the schedule need to be the same in the modal">
-<kw name="Open Session">
+<kw name="Open Session" library="resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211203 14:54:00.170" level="INFO">Opening browser 'firefox' to base url 'http://www.sky.com.br/'.</msg>
-<msg timestamp="20211203 14:54:00.175" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/sky-qa-web-test/Test/Functional/results/geckodriver-1.log</msg>
-<status status="PASS" starttime="20211203 14:54:00.170" endtime="20211203 14:54:08.408"/>
+<msg timestamp="20211203 15:10:25.219" level="INFO">Opening browser 'firefox' to base url 'http://www.sky.com.br/'.</msg>
+<msg timestamp="20211203 15:10:25.221" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/sky-qa-web-test/Test/Functional/results/geckodriver-1.log</msg>
+<status status="PASS" starttime="20211203 15:10:25.218" endtime="20211203 15:10:41.719"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211203 14:54:10.411" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211203 14:54:08.409" endtime="20211203 14:54:10.411"/>
+<msg timestamp="20211203 15:10:43.726" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211203 15:10:41.722" endtime="20211203 15:10:43.727"/>
 </kw>
-<status status="PASS" starttime="20211203 14:54:00.169" endtime="20211203 14:54:10.412"/>
+<status status="PASS" starttime="20211203 15:10:25.217" endtime="20211203 15:10:43.728"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath:(//button)[18]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211203 14:54:10.415" level="INFO">Clicking button 'xpath:(//button)[18]'.</msg>
-<status status="PASS" starttime="20211203 14:54:10.413" endtime="20211203 14:54:10.741"/>
+<msg timestamp="20211203 15:10:43.732" level="INFO">Clicking button 'xpath:(//button)[18]'.</msg>
+<status status="PASS" starttime="20211203 15:10:43.729" endtime="20211203 15:10:44.153"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>8</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211203 14:54:18.743" level="INFO">Slept 8 seconds</msg>
-<status status="PASS" starttime="20211203 14:54:10.742" endtime="20211203 14:54:18.744"/>
+<msg timestamp="20211203 15:10:52.156" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" starttime="20211203 15:10:44.154" endtime="20211203 15:10:52.156"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Programação</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20211203 14:54:18.923" level="INFO">Current page contains text 'Programação'.</msg>
-<status status="PASS" starttime="20211203 14:54:18.744" endtime="20211203 14:54:18.923"/>
+<msg timestamp="20211203 15:10:52.190" level="INFO">Current page contains text 'Programação'.</msg>
+<status status="PASS" starttime="20211203 15:10:52.157" endtime="20211203 15:10:52.190"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>(//a)[@href="/programacao"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20211203 14:54:18.924" endtime="20211203 14:54:19.007"/>
+<status status="PASS" starttime="20211203 15:10:52.190" endtime="20211203 15:10:52.228"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>(//a)[@href="/programacao"]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20211203 14:54:19.010" level="INFO">Clicking link '(//a)[@href="/programacao"]'.</msg>
-<status status="PASS" starttime="20211203 14:54:19.008" endtime="20211203 14:54:21.263"/>
+<msg timestamp="20211203 15:10:52.230" level="INFO">Clicking link '(//a)[@href="/programacao"]'.</msg>
+<status status="PASS" starttime="20211203 15:10:52.228" endtime="20211203 15:10:58.338"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>(//div)[contains(@class, 'schedule-live')][1]/div/h2</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20211203 14:54:21.263" endtime="20211203 14:54:23.686"/>
+<status status="PASS" starttime="20211203 15:10:58.339" endtime="20211203 15:10:59.180"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${live-now}</var>
 <arg>(//div)[contains(@class, 'schedule-live')][1]/div/h2</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211203 14:54:23.780" level="INFO">${live-now} = MISTÉRIOS DO DETETIVE MURDOCH</msg>
-<status status="PASS" starttime="20211203 14:54:23.687" endtime="20211203 14:54:23.780"/>
+<msg timestamp="20211203 15:10:59.220" level="INFO">${live-now} = MISTÉRIOS DO DETETIVE MURDOCH</msg>
+<status status="PASS" starttime="20211203 15:10:59.180" endtime="20211203 15:10:59.220"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211203 14:54:24.082" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211203 14:54:23.781" endtime="20211203 14:54:24.082"/>
+<msg timestamp="20211203 15:10:59.481" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211203 15:10:59.220" endtime="20211203 15:10:59.482"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//div)[contains(@class, 'schedule-live')][1]/div/h2</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211203 14:54:24.083" level="INFO">Clicking element '(//div)[contains(@class, 'schedule-live')][1]/div/h2'.</msg>
-<status status="PASS" starttime="20211203 14:54:24.083" endtime="20211203 14:54:24.447"/>
+<msg timestamp="20211203 15:10:59.483" level="INFO">Clicking element '(//div)[contains(@class, 'schedule-live')][1]/div/h2'.</msg>
+<status status="PASS" starttime="20211203 15:10:59.483" endtime="20211203 15:10:59.883"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//div)[contains(@class, 'sky-modal-program-title')]/h2</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211203 14:54:24.448" endtime="20211203 14:54:25.421"/>
+<status status="PASS" starttime="20211203 15:10:59.884" endtime="20211203 15:11:01.087"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${program-name}</var>
 <arg>(//div)[contains(@class, 'sky-modal-program-title')]/h2</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211203 14:54:25.448" level="INFO">${program-name} = MISTÉRIOS DO DETETIVE MURDOCH</msg>
-<status status="PASS" starttime="20211203 14:54:25.422" endtime="20211203 14:54:25.448"/>
+<msg timestamp="20211203 15:11:01.115" level="INFO">${program-name} = MISTÉRIOS DO DETETIVE MURDOCH</msg>
+<status status="PASS" starttime="20211203 15:11:01.088" endtime="20211203 15:11:01.115"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211203 14:54:25.682" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211203 14:54:25.452" endtime="20211203 14:54:25.683"/>
+<msg timestamp="20211203 15:11:01.440" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211203 15:11:01.116" endtime="20211203 15:11:01.440"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${live-now}</arg>
 <arg>${program-name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211203 14:54:25.683" endtime="20211203 14:54:25.685"/>
+<status status="PASS" starttime="20211203 15:11:01.441" endtime="20211203 15:11:01.442"/>
 </kw>
-<status status="PASS" starttime="20211203 14:54:00.168" endtime="20211203 14:54:25.686"/>
+<kw name="Close Session" library="resource" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211203 15:11:03.446" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211203 15:11:01.445" endtime="20211203 15:11:03.446"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211203 15:11:03.579" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211203 15:11:03.447" endtime="20211203 15:11:03.579"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211203 15:11:03.579" endtime="20211203 15:11:05.170"/>
+</kw>
+<status status="PASS" starttime="20211203 15:11:01.443" endtime="20211203 15:11:05.170"/>
+</kw>
+<status status="PASS" starttime="20211203 15:10:25.215" endtime="20211203 15:11:05.171"/>
 </test>
-<status status="PASS" starttime="20211203 14:53:59.805" endtime="20211203 14:54:25.689"/>
+<status status="PASS" starttime="20211203 15:10:24.812" endtime="20211203 15:11:05.176"/>
 </suite>
 <statistics>
 <total>

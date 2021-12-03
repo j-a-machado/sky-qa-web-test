@@ -1,18 +1,17 @@
-1638554040411	geckodriver	INFO	Listening on 127.0.0.1:52163
-1638554041223	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofilekh2MH8"
-1638554042453	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofilekh2MH8/search.json.mozlz4", (void 0)))
+1638555026008	geckodriver	INFO	Listening on 127.0.0.1:52401
+1638555026299	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofilexSDvaT"
+1638555030423	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofilexSDvaT/search.json.mozlz4", (void 0)))
 console.error: BackgroundUpdate: 
   _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
-1638554045578	Marionette	INFO	Listening on port 52170
-1638554045714	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=1528963605, line 1: unreachable code after return statement
-JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=1528963605, line 1: unreachable code after return statement
-JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=1528963605, line 1: unreachable code after return statement
-JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=1528963605 line 1 > eval, line 1: unreachable code after return statement
-JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=1528963605 line 1 > eval, line 1: unreachable code after return statement
-1638554062362	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
-1638554068971	Marionette	INFO	Stopped listening on port 52170
+1638555037069	Marionette	INFO	Listening on port 52408
+1638555037184	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=834995021, line 1: unreachable code after return statement
+JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=834995021, line 1: unreachable code after return statement
+JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=834995021, line 1: unreachable code after return statement
+JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=834995021 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.sky.com.br/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=834995021 line 1 > eval, line 1: unreachable code after return statement
+1638555063581	Marionette	INFO	Stopped listening on port 52408
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
