@@ -53,7 +53,9 @@ A precondition for running the tests is having [Robot Framework](http://robotfra
 
 In practice it is easiest to install Robot Framework and SeleniumLibrary along with its dependencies using [pip](http://pip-installer.org/) package manager. Once you have pip installed, all you need to do is running these commands:
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 #### 4.1.2. Make sure you have the right driver file.
 
@@ -74,7 +76,7 @@ Consult [SeleniumLibrary](https://github.com/robotframework/SeleniumLibrary) doc
 #### 4.1.3. Clone this repository.
 
 ```
-git clone https://github.com/j-a-machado/qa-accenture.git
+git clone https://github.com/j-a-machado/sky-qa-web-test.git
 ```
 
 ### 4.2. Run the test
