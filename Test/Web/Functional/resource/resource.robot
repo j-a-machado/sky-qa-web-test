@@ -2,7 +2,7 @@
 Library         SeleniumLibrary
 
 *** Variables ***
-${browser}      firefox
+${browser}      chrome
 ${url}          http://www.sky.com.br/
 
 *** Keywords ***

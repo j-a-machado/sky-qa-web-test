@@ -63,7 +63,7 @@ Here is the [documentation](https://www.selenium.dev/selenium/docs/api/py/index.
 
 The browser that is used is controlled by `${browser}` variable defined in [resource.robot](https://github.com/j-a-machado/sky-qa-web-test/blob/main/Test/Web/Functional/resource/resource.robot) resource file.
 
-Firefox browser is used by default, but that can be easily overridden from the command line:
+Chrome browser is used by default, but that can be easily overridden from the command line:
 
 ```
 robot --variable BROWSER:Chrome login_tests
